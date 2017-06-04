@@ -13,7 +13,7 @@
       {% assign imgSrc = imgSrc | append: '/' | append: page.cover-image %}
       {% assign imgSrc = imgSrc | replace: '//', '/' %}
     {% endif %}
-    <div class="logo-image {{ imgHeight }}" style="background-image: url({{ imgSrc }});">
+    <div class="page-home-cover-image {{ imgHeight }}" style="background-image: url({{ imgSrc }});">
       <img src="{{ imgSrc }}" alt="{{ thumb }}">
     </div>
 </div>
