@@ -7,6 +7,12 @@
     {% if page.permalink == '/' %}
       {% assign imgHeight = 'logo-image-home' %}
     {% endif %}
+    {% if page.cover-image %}
+      {% assign thumb = page.cover-image | replace: '.jpg', '' %}
+      {% assign imgSrc = site.baseurl | append: '/' | append: site.media_folder %}
+      {% assign imgSrc = imgSrc | append: '/' | append: page.cover-image %}
+      {% assign imgSrc = imgSrc | replace: '//', '/' %}
+    {% endif %}
     <div class="logo-image {{ imgHeight }}" style="background-image: url({{ imgSrc }});">
       <img src="{{ imgSrc }}" alt="{{ thumb }}">
     </div>

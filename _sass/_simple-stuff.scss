@@ -6,7 +6,6 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    max-height: 320px;
 
     img {
       visibility: hidden;
@@ -14,7 +13,7 @@
   }
 
   .logo-image-home {
-    max-height: 450px;
+    max-height: none;
   }
 }
 
