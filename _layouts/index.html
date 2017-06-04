@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body class="index">
+   <header class="head">
+     {% include header.html %}
+     {% include nav.html %}
+    </header>
+    <div class="margin">
+      <div class="content index-content">
+        <div class="articles">
+          {% for page in site.pages %}
+            {% if page.home-title and page.home-description %}
+              {% assign imgSrc = site.baseurl | append: '/' | append: site.media_folder %}
+              {% assign imgSrc = imgSrc | append: '/' | append: page.cover-image %}
+              {% assign imgSrc = imgSrc | replace: '//', '/' %}
+
+              <div class="page-home-item">
+                <p class="page-home-title">{{ page.home-title }}</p>
+                <p class="page-home-description">
+                  {{ page.home-description }}
+                  <a class="page-home-link" href="{{ page.url | prepend: site.baseurl | replace: '//', '/'}}">Leia Mais</a>
+                </p>
+
+                <div class="page-home-cover-image" style="background-image: url({{ imgSrc }});">
+                  <img src="{{ imgSrc }}">
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

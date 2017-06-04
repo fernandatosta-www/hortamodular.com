@@ -1,0 +1,55 @@
+name: Horta Modular
+description: uma horta para qualquer lar
+featimg: homecover.jpg
+
+url: http://hortamodular.com
+baseurl: ''
+port: 4545
+permalink: /:title/
+include: ['_pages']
+
+media_folder: /media
+destination: jekyllbuild
+full_rebuild: true
+gems: [jekyll-paginate]
+paginate: 8
+paginate_path: /page/:num/
+infinite_scroll: true #false for pagination
+
+tumblr: "#"
+pinterest: "#"
+instagram: "#"
+twitter: "#"
+facebook: "#"
+youtube: "#"
+vimeo: "#"
+soundcloud: "#"
+email: "#"
+
+encoding: utf-8
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      type: "standard"
+      homedisplay: "featimg"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      type: "standard"
+      homedisplay: "featimg"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+relative_permalinks: false
+include: ['_pages']
+exclude: [.git, .gitignore, .sass-cache, README.md, jekyllbuild]

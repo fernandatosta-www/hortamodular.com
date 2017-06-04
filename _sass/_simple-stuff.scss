@@ -1,0 +1,65 @@
+.logo-container {
+  position: relative;
+
+  .logo-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    max-height: 320px;
+
+    img {
+      visibility: hidden;
+    }
+  }
+
+  .logo-image-home {
+    max-height: 450px;
+  }
+}
+
+.index {
+  .index-content {
+    width: 100%;
+  }
+
+  .page-home-item {
+    font-size: 16px;
+    padding-bottom: 1em;
+
+    @media (min-width: 600px) {
+      font-size: 20px;
+    }
+    @media (min-width: 900px) {
+      font-size: 24px;
+    }
+  }
+  .page-home-item:last-of-type {
+    padding-bottom: 0;
+  }
+
+  .page-home-title {
+    font: 900 1.8em Ubuntu;
+    padding: 0 5%;
+  }
+  
+  .page-home-description {
+    font: 300 1.1em Roboto;
+    padding: 0 5% 1em;
+  }
+
+  .page-home-link {
+    font-weight: 700;
+  }
+
+  .page-home-cover-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    img {
+      visibility: hidden;
+    }
+  }
+}
