@@ -17,43 +17,43 @@
         </nav>
         <nav class="iconnav">
             <ul>
-                {% if site.tumblr %}
+                {% unless site.tumblr == '' %}
                 <li class="social">
-                    <a href="{{ site.tumblr }}" class="tumblr"><i class="fa fa-tumblr"></i></a>
+                    <a target="_blank" href="{{ site.tumblr }}" class="tumblr"><i class="fa fa-tumblr"></i></a>
                 </li>
-                {% endif %} {% if site.pinterest %}
+                {% endunless %} {% unless site.pinterest == '' %}
                 <li class="social">
-                    <a href="{{ site.pinterest }}" class="pinterest"><i class="fa fa-pinterest"></i></a>
+                    <a target="_blank" href="{{ site.pinterest }}" class="pinterest"><i class="fa fa-pinterest"></i></a>
                 </li>
-                {% endif %} {% if site.instagram %}
+                {% endunless %} {% unless site.instagram == '' %}
                 <li class="social">
-                    <a href="{{ site.instagram }}" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a target="_blank" href="{{ site.instagram }}" class="instagram"><i class="fa fa-instagram"></i></a>
                 </li>
-                {% endif %} {% if site.twitter %}
+                {% endunless %} {% unless site.twitter == '' %}
                 <li class="social">
-                    <a href="{{ site.twitter }}" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a target="_blank" href="{{ site.twitter }}" class="twitter"><i class="fa fa-twitter"></i></a>
                 </li>
-                {% endif %} {% if site.facebook %}
+                {% endunless %} {% unless site.facebook == '' %}
                 <li class="social">
-                    <a href="{{ site.facebook }}" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a target="_blank" href="{{ site.facebook }}" class="facebook"><i class="fa fa-facebook"></i></a>
                 </li>
-                {% endif %} {% if site.youtube %}
+                {% endunless %} {% unless site.youtube == '' %}
                 <li class="social">
-                    <a href="{{ site.youtube }}" class="youtube"><i class="fa fa-youtube"></i></a>
+                    <a target="_blank" href="{{ site.youtube }}" class="youtube"><i class="fa fa-youtube"></i></a>
                 </li>
-                {% endif %} {% if site.vimeo %}
+                {% endunless %} {% unless site.vimeo == '' %}
                 <li class="social">
-                    <a href="{{ site.vimeo }}" class="vimeo"><i class="fa fa-vimeo-square"></i></a>
+                    <a target="_blank" href="{{ site.vimeo }}" class="vimeo"><i class="fa fa-vimeo-square"></i></a>
                 </li>
-                {% endif %} {% if site.soundcloud %}
+                {% endunless %} {% unless site.soundcloud == '' %}
                 <li class="social">
-                    <a href="{{ site.soundcloud }}" class="soundcloud"><i class="fa fa-soundcloud"></i></a>
+                    <a target="_blank" href="{{ site.soundcloud }}" class="soundcloud"><i class="fa fa-soundcloud"></i></a>
                 </li>
-                {% endif %} {% if site.email %}
+                {% endunless %} {% unless site.email == '' %}
                 <li class="social">
                     <a href="mailto:{{ site.email }}" class="soundcloud"><i class="fa fa-envelope"></i></a>
                 </li>
-                {% endif %}
+                {% endunless %}
             </ul>
         </nav>
         <a href='#menu' class="toggle-link noline">
