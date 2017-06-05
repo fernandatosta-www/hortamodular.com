@@ -12,8 +12,17 @@
   }
 }
 
-.page-home-item {
-  font-size: 16px;
+.page-content-container {
+  width: 100%;
+
+  .page-content p {
+    font: 300 0.9em $main-font;
+    padding: 0 5% 1em;
+  }
+}
+
+.page-home-item, .page-content-container {
+  font-size: 18px;
   padding-bottom: 1em;
 
   @media (min-width: 600px) {
@@ -27,13 +36,13 @@
   padding-bottom: 0;
 }
 
-.page-home-title {
-  font: 900 1.8em Ubuntu;
+.page-home-title, .page-title {
+  font: 700 1.5em $headings-font;
   padding: 0 5%;
 }
 
 .page-home-description {
-  font: 300 1.1em Roboto;
+  font: 300 0.9em $main-font;
   padding: 0 5% 1em;
 }
 

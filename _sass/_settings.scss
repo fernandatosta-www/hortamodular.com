@@ -54,15 +54,17 @@ $link-color: $dark-primary-color;
 // String Variables (use strings as values | for Font Variables: Don't forget to include the fonts)
 //------------------------------------------
 
-$main-font: 'Roboto', sans-serif;
+$main-font: 'Roboto Slab', sans-serif;
 
 // set to $main-font if you don't want your headings to use another font
-$headings-font: 'Ubuntu', sans-serif;
+$headings-font: 'Josefin Slab', sans-serif;
+
+$menu-font: 'Josefin Slab', sans-serif;
 
 // use values from text-transform [none|capitalize|uppercase|lowercase|initial|inherit]
 $headings-text-transform: none;
 
-$code-font: 'Source Code Pro', monospace;
+$code-font: monospace;
 
 // size variables (use numbers as values (units as indicated ))
 
