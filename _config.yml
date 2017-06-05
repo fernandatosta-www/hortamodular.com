@@ -1,5 +1,5 @@
 name: Horta Modular
-description: uma horta para qualquer lar
+description: ""
 featimg: homecover.jpg
 
 url: http://hortamodular.com
@@ -16,15 +16,15 @@ paginate: 8
 paginate_path: /page/:num/
 infinite_scroll: true #false for pagination
 
-tumblr: "#"
-pinterest: "#"
-instagram: "#"
-twitter: "#"
-facebook: "#"
-youtube: "#"
-vimeo: "#"
-soundcloud: "#"
-email: "#"
+tumblr: ""
+pinterest: ""
+instagram: "https://www.instagram.com/hortamodular/"
+twitter: ""
+facebook: ""
+youtube: ""
+vimeo: ""
+soundcloud: ""
+email: "hortamodular@gmail.com"
 
 encoding: utf-8
 
