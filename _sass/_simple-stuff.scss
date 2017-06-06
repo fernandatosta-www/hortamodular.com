@@ -1,14 +1,9 @@
-.logo-container {
-  position: relative;
-
-  .logo-image-home {
-    max-height: none;
-  }
-}
-
 .index {
   .index-content {
     width: 100%;
+  }
+  .margin {
+    padding: 0;
   }
 }
 
@@ -23,7 +18,7 @@
 
 .page-home-item, .page-content-container {
   font-size: 18px;
-  padding-bottom: 1em;
+  padding: 1em 0 0;
 
   @media (min-width: 600px) {
     font-size: 20px;
@@ -55,8 +50,10 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  max-height: 720px;
 
   img {
+    height: 100%;
     visibility: hidden;
   }
 }
