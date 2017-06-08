@@ -53,3 +53,51 @@ kramdown:
 relative_permalinks: false
 include: ['_pages']
 exclude: [.git, .gitignore, .sass-cache, README.md, jekyllbuild]
+
+# prose.io
+prose:
+  media: 'assets/posts'
+  ignore:
+    - .gitignore
+    - _config.yml
+    - _layouts
+    - _includes
+    - _sass
+    - css
+    - fonts
+    - js
+    - media/favicons
+    - LICENSE
+    - README
+  metadata:     
+    _pages:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "homedisplay"
+        field:
+          element: "hidden"
+          value: "featimg"
+      - name: "title"
+        field:
+          element: "text"
+          label: "nome da página"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "escolha um url para essa página"
+          placeholder: "/url-da-pagina/"
+      - name: "nav-title"
+        field:
+          element: "text"
+          label: "nome da página para o menu (deixar em branco se não quiser no menu)"
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "descrição curta da página (deixar em branco se não quiser que página apareça na home)"
+      - name: "cover-image"
+        field:
+          element: "text"
+          label: "imagem de capa para a página (tem que ser .jpg por enquanto)"
+          placeholder: "horta2.jpg"
