@@ -2,7 +2,7 @@
 nav-title: Projeto
 permalink: /projeto/
 cover-image: projeto.jpg
-home-title: O Projeto
-home-description: "Aqui uma pequena descrição do projeto de construção/montagem."
+title: O Projeto
+description: "Aqui uma pequena descrição do projeto de construção/montagem."
 ---
 Já já algo aqui.
