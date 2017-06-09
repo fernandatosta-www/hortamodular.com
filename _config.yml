@@ -6,7 +6,6 @@ url: http://hortamodular.com
 baseurl: ''
 port: 4545
 permalink: /:title/
-include: ['_pages']
 
 media_folder: /media
 destination: jekyllbuild
@@ -46,17 +45,9 @@ defaults:
       type: "standard"
       homedisplay: "featimg"
 
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-relative_permalinks: false
-include: ['_pages']
-exclude: [.git, .gitignore, .sass-cache, README.md, jekyllbuild]
-
 # prose.io
 prose:
-  media: 'assets/posts'
+  media: 'media'
   ignore:
     - .gitignore
     - _config.yml
@@ -66,10 +57,12 @@ prose:
     - css
     - fonts
     - js
+    - LICENCE
+    - CNAME
+    - README.md
+    - index.html
     - media/favicons
-    - LICENSE
-    - README
-  metadata:     
+  metadata:
     _pages:
       - name: "layout"
         field:
@@ -101,3 +94,11 @@ prose:
           element: "text"
           label: "imagem de capa para a página (tem que ser .jpg por enquanto)"
           placeholder: "horta2.jpg"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+relative_permalinks: false
+include: ['_pages']
+exclude: [.git, .gitignore, .sass-cache, README.md, jekyllbuild]
