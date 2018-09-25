@@ -1,7 +1,7 @@
 ---
 nav-title: Quem somos
 permalink: /quem-somos/
-cover-image: projeto.jpg
+cover-image: quemsomos.jpg
 title: Quem somos
 ---
 
